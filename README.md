@@ -1,47 +1,41 @@
-# Terraform Poke Provider
+Terraform Poke Provider
 
-¡Bienvenido al proyecto **Terraform Poke Provider**!
+The Terraform Poke Provider started as a creative experiment to show that Infrastructure as Code doesn’t always need to stay within traditional boundaries.
 
-> "Cualquiera tiene una poke API, pero no cualquiera tiene un PaC (Pokemon as Code)"
+What is it about?
 
-## ¿Qué es esto y por qué deberías fingir que te importa?
+Terraform Poke Provider allows you to manage Pokémon as infrastructure resources using Terraform. While the concept may sound playful, the underlying goal is clear: to explore how Terraform, Go, external APIs, and complementary Python applications can work together, and to showcase how DevOps tools can be extended for unconventional use cases.
 
-¿Cansado de proyectos serios y útiles? ¡Nosotros también! Por eso creamos el Terraform Poke Provider, el único proyecto que te permite gestionar Pokémon como si fueran recursos de infraestructura. ¿Por qué? Porque podemos. ¿Acaso la humanidad lo necesita? Probablemente no, pero ¿quién puede resistirse a la idea de hacer `terraform apply` y que aparezca un Pikachu?
+Key Features
 
-## Características absurdamente épicas
+Custom Terraform provider in Go to extend IaC capabilities.
 
-- **Gestión de Pokémon como recursos Terraform** (¡Por fin puedes tener un Charizard en producción!)
-- Ejemplo de Go para que tu CV parezca más impresionante
-- Integración con APIs y recursos externos que nadie pidió
-- Plantillas web para que tu jefe piense que trabajas
-- Aplicación Flask en Python para que el caos sea multiplataforma
+API integrations to manage and fetch external resources.
 
-## Estructura del proyecto (o cómo fingir que esto es profesional)
+Flask (Python) web application as a complementary interface.
 
-- `terraform-poke-provider/`: Código fuente del proveedor Terraform en Go (¡Go, porque Python ya es muy mainstream!)
-- `app/`: Aplicación web en Python (Flask) para interactuar con el proveedor (¡Por si quieres impresionar a tu abuela!)
-- `main.tf`: Ejemplo de configuración Terraform (¡Haz tu propio equipo Pokémon sin salir de la terminal!)
-- `dockerfile`: Contenedor para despliegue (¡Porque todo debe ir en Docker aunque no lo necesite!)
+Dockerized deployment for packaging and portability.
 
-## ¿Por qué PaC?
+Project Structure
 
-La filosofía de "Pokemon as Code" (PaC) es la respuesta a una pregunta que nadie hizo. Si puedes gestionar servidores, ¿por qué no Pokémon? Este proyecto demuestra que la creatividad y el tiempo libre pueden llegar demasiado lejos. ¡Gestiona tus Pokémon como código y conviértete en el arquitecto de tu propia Liga Pokémon!
+terraform-poke-provider/: Terraform provider source code in Go.
 
-## Cómo empezar (o cómo perder el tiempo con estilo)
+app/: Python Flask web app.
 
-1. Clona el repositorio (hazlo, nadie te va a juzgar)
-2. Instala las dependencias de Go y Python (¡demuestra que sabes usar el terminal!)
-3. Configura tu archivo `main.tf` para definir tus Pokémon (¡elige sabiamente, tu reputación depende de ello!)
-4. Ejecuta la aplicación web para visualizarlos (¡y presume en X!)
+main.tf: Example Terraform configuration.
 
-## Contribuciones
+dockerfile: Container for deployment.
 
-¿Tienes ideas absurdas, recursos innecesarios o ganas de perder el tiempo? ¡Este proyecto es para ti! Abre un issue, un pull request o simplemente deja un meme.
+Philosophy Behind the Project
 
-## Licencia
+Beyond the fun idea of running terraform apply to define your own Pokémon team, this project demonstrates how custom Terraform providers work, how to integrate them with APIs, and how to expand the “as Code” philosophy into new and unconventional scenarios.
 
-MIT (porque si alguien quiere copiar esto, que lo haga sin remordimientos)
+Contributions
 
----
+Open to the community — whether you want to experiment, learn, or simply explore the intersection of DevOps and creativity.
 
-¡Atrévete a gestionar tus Pokémon como nunca antes, con el poder de Terraform y la magia de PaC! Si llegaste hasta aquí, probablemente eres nuestro público objetivo.
+License
+
+MIT License.
+
+Terraform Poke Provider is an example of how curiosity and innovation can transform a fun idea into a practical tool for learning about custom providers, Infrastructure as Code, and automation.
